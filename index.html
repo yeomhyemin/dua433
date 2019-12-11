@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shotcut icon" href="images/idus_logo.ico">
+	<title>아이디어스 - 핸드메이드, 수공예, 수제먹거리</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<ul class="skip">
+		<li><a href="#container">본문바로가기</a></li>
+		<li><a href="#nav">메인메뉴바로가기</a></li>
+	</ul>
+	<!-- header -->
+	<header>
+		<div class="headTop">
+			<div class="center">
+				<h1 class="logo"><a href="#"><img src="images/header_logo.svg" alt="아이디어스"></a></h1>
+				<ul class="gnb">
+					<li><a href="login.html">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#"><img src="images/btn_mypage.png" alt="마이페이지"></a></li>
+					<li><a href="#"><img src="images/btn_cart.png" alt="장바구니"></a></li>
+				</ul>
+				<div class="realTime">
+					<div class="timeAni">
+						<ul class="realTimeAni">
+							<li><a href="#">1. 에어팟케이스</a></li>
+							<li class="ani1"><a href="#">2. 폰케이스</a></li>
+							<li class="ani1"><a href="#">3. 추석</a></li>
+							<li class="ani1"><a href="#">4. 키링</a></li>
+							<li class="ani1"><a href="#">5. 커플</a></li>
+							<li class="ani1"><a href="#">6. 반지</a></li>
+							<li class="ani1"><a href="#">7. 귀걸이</a></li>
+							<li class="ani1"><a href="#">8. 생일선물</a></li>
+							<li class="ani1"><a href="#">9. 가방</a></li>
+							<li class="ani1"><a href="#">10. 파우치</a></li>
+						</ul>
+					</div>
+					<div class="realTimePop">
+						<h2>실시간 인기 검색어</h2>
+						<ul>
+							<li><a href="#"><span>1</span>에어팟케이스</a></li>
+							<li><a href="#"><span>2</span>폰케이스</a></li>
+							<li><a href="#"><span>3</span>추석</a></li>
+							<li><a href="#"><span>4</span>키링</a></li>
+							<li><a href="#"><span>5</span>커플</a></li>
+							<li><a href="#"><span>6</span>반지</a></li>
+							<li><a href="#"><span>7</span>귀걸이</a></li>
+							<li><a href="#"><span>8</span>생일선물</a></li>
+							<li><a href="#"><span>9</span>가방</a></li>
+							<li><a href="#"><span>10</span>파우치</a></li>
+						</ul>
+					</div>
+				</div>
+				<form class="search">
+					<label for="iSearch">작품, 작가 검색</label>
+					<input type="text" id="iSearch">
+					<a href="#" class="searchBtn"><img src="images/btn_search.png" alt="작품, 작가 검색"></a>
+				</form>
+				<a href="#" class="mSearch"><img src="images/btn_search2.png" alt="작품, 작가 검색"></a>
+				<a href="#" class="mHam"><img src="images/all.png" alt="전체카테고리"></a>
+			</div>
+		</div>
+		<div class="headBottom clearFix">
+			<div class="subBg"></div>
+			<div class="center">
+				<div class="category">
+					<p class="cateHam">
+						<a href="#">
+							<span class="ham1"></span>
+							<span class="ham2"></span>
+							<span class="ham3"></span>
+						</a>
+					</p>
+					<a href="#">전체카테고리</a>
+					<ul class="cateWrap clearFix">
+						<li class="cate1">
+							<h2 class="cateTitle">음식</h2>
+							<ul class="sub">
+								<li><a href="#">디저트, 베이커리, 떡</a></li>
+								<li><a href="#">농축수산물</a></li>
+								<li><a href="#">수제반찬</a></li>
+								<li><a href="#">음료(커피, 차 등)</a></li>
+								<li><a href="#">그 외 수제먹거리</a></li>
+								<li><a href="#">전통주</a></li>
+							</ul>
+						</li>
+						<li class="cate2">
+							<h2 class="cateTitle">인테리어</h2>
+							<ul class="sub">
+								<li><a href="#">인테리어 소품</a></li>
+								<li><a href="#">가구</a></li>
+								<li><a href="#">도자기</a></li>
+								<li><a href="#">캔들, 디퓨저, 방향제</a></li>
+							</ul>
+						</li>
+						<li class="cate3">
+							<h2 class="cateTitle">패션&amp;뷰티</h2>
+							<ul class="sub">
+								<li><a href="#">휴대폰케이스</a></li>
+								<li><a href="#">가방, 파우치</a></li>
+								<li><a href="#">여성 수제화</a></li>
+								<li><a href="#">남성 수제화</a></li>
+								<li><a href="#">섬유, 의류, 퀼트</a></li>
+								<li><a href="#">지갑(지폐, 카드, 동전, 명함)</a></li>
+								<li><a href="#">패션잡화</a></li>
+								<li><a href="#">향수, 화장품, 뷰티</a></li>
+							</ul>
+						</li>
+						<li class="cate4">
+							<h2 class="cateTitle">액세서리</h2>
+							<ul class="sub">
+								<li><a href="#">귀걸이</a></li>
+								<li><a href="#">반지</a></li>
+								<li><a href="#">목걸이</a></li>
+								<li><a href="#">팔찌</a></li>
+								<li><a href="#">시계</a></li>
+								<li><a href="#">전자기기 관련</a></li>
+								<li><a href="#">그 외 액세서리</a></li>
+							</ul>
+						</li>
+						<li class="cate5">
+							<h2 class="cateTitle">그림</h2>
+							<ul class="sub">
+								<li><a href="#">페인팅, 캐리커쳐, 캘리</a></li>
+								<li><a href="#">파인아트</a></li>
+							</ul>
+						</li>
+						<li class="cate6">
+							<h2 class="cateTitle">생활</h2>
+							<ul class="sub">
+								<li><a href="#">주방, 생활</a></li>
+								<li><a href="#">비누, 천연비누</a></li>
+								<li><a href="#">반려동물 용품</a></li>
+								<li><a href="#">육아, 아동</a></li>
+								<li><a href="#">인형, 장난감</a></li>
+								<li><a href="#">문구, 팬시</a></li>
+								<li><a href="#">꽃(생화, 드라이, 다육 등)</a></li>
+								<li><a href="#">공예</a></li>
+							</ul>
+						</li>
+						<li class="cate7">
+							<h2 class="cateTitle">기타</h2>
+							<ul class="sub">
+								<li><a href="#">기타</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<ul id="nav">
+					<li>
+						<a href="#">음식</a>
+						<ul class="sub">
+							<li><a href="#">디저트, 베이커리, 떡</a></li>
+							<li><a href="#">농축수산물</a></li>
+							<li><a href="#">수제반찬</a></li>
+							<li><a href="#">음료(커피, 차 등)</a></li>
+							<li><a href="#">그 외 수제먹거리</a></li>
+							<li><a href="#">전통주</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">인테리어</a>
+						<ul class="sub">
+							<li><a href="#">인테리어 소품</a></li>
+							<li><a href="#">가구</a></li>
+							<li><a href="#">도자기</a></li>
+							<li><a href="#">캔들, 디퓨저, 방향제</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">패션&amp;뷰티</a>
+						<ul class="sub">
+							<li><a href="#">휴대폰케이스</a></li>
+							<li><a href="#">가방, 파우치</a></li>
+							<li><a href="#">여성 수제화</a></li>
+							<li><a href="#">남성 수제화</a></li>
+							<li><a href="#">섬유, 의류, 퀼트</a></li>
+							<li><a href="#">지갑(지폐, 카드, 동전, 명함)</a></li>
+							<li><a href="#">패션잡화</a></li>
+							<li><a href="#">향수, 화장품, 뷰티</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">액세서리</a>
+						<ul class="sub">
+							<li><a href="#">귀걸이</a></li>
+							<li><a href="#">반지</a></li>
+							<li><a href="#">목걸이</a></li>
+							<li><a href="#">팔찌</a></li>
+							<li><a href="#">시계</a></li>
+							<li><a href="#">전자기기 관련</a></li>
+							<li><a href="#">그 외 액세서리</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">그림</a>
+						<ul class="sub">
+							<li><a href="#">페인팅, 캐리커쳐, 캘리</a></li>
+							<li><a href="#">파인아트</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">생활</a>
+						<ul class="sub">
+							<li><a href="#">주방, 생활</a></li>
+							<li><a href="#">비누, 천연비누</a></li>
+							<li><a href="#">반려동물 용품</a></li>
+							<li><a href="#">육아, 아동</a></li>
+							<li><a href="#">인형, 장난감</a></li>
+							<li><a href="#">문구, 팬시</a></li>
+							<li><a href="#">꽃(생화, 드라이, 다육 등)</a></li>
+							<li><a href="#">공예</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">기타</a>
+						<ul class="sub">
+							<li><a href="#">기타</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="mCategoryW">
+				<div class="mCategory">
+					<div class="cateHead">
+						<div class="cateLogo"><img src="images/logo.png" alt="아이디어스"></div>
+						<div class="closeBtn"><a href="#"><img src="images/close.png" alt="close"></a></div>
+					</div>
+					<ul class="mCateWrap">
+						<li class="cate1">
+							<h2 class="cateTitle">음식</h2>
+							<ul class="sub">
+								<li><a href="#">디저트, 베이커리, 떡</a></li>
+								<li><a href="#">농축수산물</a></li>
+								<li><a href="#">수제반찬</a></li>
+								<li><a href="#">음료(커피, 차 등)</a></li>
+								<li><a href="#">그 외 수제먹거리</a></li>
+								<li><a href="#">전통주</a></li>
+							</ul>
+						</li>
+						<li class="cate2">
+							<h2 class="cateTitle">인테리어</h2>
+							<ul class="sub">
+								<li><a href="#">인테리어 소품</a></li>
+								<li><a href="#">가구</a></li>
+								<li><a href="#">도자기</a></li>
+								<li><a href="#">캔들, 디퓨저, 방향제</a></li>
+							</ul>
+						</li>
+						<li class="cate3">
+							<h2 class="cateTitle">패션&amp;뷰티</h2>
+							<ul class="sub">
+								<li><a href="#">휴대폰케이스</a></li>
+								<li><a href="#">가방, 파우치</a></li>
+								<li><a href="#">여성 수제화</a></li>
+								<li><a href="#">남성 수제화</a></li>
+								<li><a href="#">섬유, 의류, 퀼트</a></li>
+								<li><a href="#">지갑(지폐, 카드, 동전, 명함)</a></li>
+								<li><a href="#">패션잡화</a></li>
+								<li><a href="#">향수, 화장품, 뷰티</a></li>
+							</ul>
+						</li>
+						<li class="cate4">
+							<h2 class="cateTitle">액세서리</h2>
+							<ul class="sub">
+								<li><a href="#">귀걸이</a></li>
+								<li><a href="#">반지</a></li>
+								<li><a href="#">목걸이</a></li>
+								<li><a href="#">팔찌</a></li>
+								<li><a href="#">시계</a></li>
+								<li><a href="#">전자기기 관련</a></li>
+								<li><a href="#">그 외 액세서리</a></li>
+							</ul>
+						</li>
+						<li class="cate5">
+							<h2 class="cateTitle">그림</h2>
+							<ul class="sub">
+								<li><a href="#">페인팅, 캐리커쳐, 캘리</a></li>
+								<li><a href="#">파인아트</a></li>
+							</ul>
+						</li>
+						<li class="cate6">
+							<h2 class="cateTitle">생활</h2>
+							<ul class="sub">
+								<li><a href="#">주방, 생활</a></li>
+								<li><a href="#">비누, 천연비누</a></li>
+								<li><a href="#">반려동물 용품</a></li>
+								<li><a href="#">육아, 아동</a></li>
+								<li><a href="#">인형, 장난감</a></li>
+								<li><a href="#">문구, 팬시</a></li>
+								<li><a href="#">꽃(생화, 드라이, 다육 등)</a></li>
+								<li><a href="#">공예</a></li>
+							</ul>
+						</li>
+						<li class="cate7">
+							<h2 class="cateTitle">기타</h2>
+							<ul class="sub">
+								<li><a href="#">기타</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- container -->
+	<div id="container">
+		<div id="visual">
+			<ul class="banner">
+				<li class="banner1"><a href="#">banner1</a></li>
+				<li class="banner2"><a href="#">banner2</a></li>
+			</ul>
+			<div class="center">
+				<ul class="bannerArrow ">
+					<li class="aBtnL"><a href="#">left</a></li>
+					<li class="aBtnR"><a href="#">right</a></li>
+				</ul>
+			</div>
+			<ul class="bannerBtn">
+				<li class="active"><a href="#"></a></li>
+				<li><a href="#"></a></li>
+			</ul>
+		</div>
+		<section class="contents">
+			<div class="center">
+				<h2 class="blind">제품, sns, 공지사항</h2>
+				<section class="bestPick clearFix">
+					<h2 class="title">BEST <span>Pick</span></h2>
+					<ul class="best">
+						<li class="best1 active"><a href="#">인기 작품</a></li>
+						<li class="best2"><a href="#">최신 작품</a></li>
+						<li class="best3"><a href="#">실시간 구매</a></li>
+						<li class="best4"><a href="#">실시간 후기</a></li>
+						<li class="best5"><a href="#">인기 작가</a></li>
+						<li class="best6"><a href="#">작가님 추천</a></li>
+					</ul>
+					<div class="bestWrap">
+						<div class="bestWrap1">
+							<ul class="best1banner">
+								<li>
+									<img src="images/best_img11.jpg" alt="에어팟구름케이스+구름키링세트">
+									<div class="text">
+										<span class="name">마이큐피드</span>
+										<span class="title">에어팟구름케이스+구름키링세트</span>
+										<span class="price">14,800원</span>
+										<span class="sPrice"></span>
+									</div>
+									<div class="wish">1,050명의 고객님들이 이 작품을 구매 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img12.jpg" alt="(할인) 커플 드로잉 폰케이스">
+									<div class="text">
+										<span class="name">가꼬싶다</span>
+										<span class="title">(할인) 커플 드로잉 폰케이스</span>
+										<span class="price">10,900원</span>
+										<span class="sPrice">25,000원</span>
+									</div>
+									<div class="wish">4,438명의 고객님들이 이 작품을 구매 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img13.jpg" alt="우드 에어팟 드로잉/ 레터링 케이스">
+									<div class="text">
+										<span class="name">라온제나</span>
+										<span class="title">우드 에어팟 드로잉/ 레터링 케이스</span>
+										<span class="price">15,000원</span>
+										<span class="sPrice">20,000원</span>
+									</div>
+									<div class="wish">151명의 고객님들이 이 작품을 구매 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img14.jpg" alt="알록달록 무지개 스트랩 폰케이스">
+									<div class="text">
+										<span class="name">짤랑 ZZALRANG</span>
+										<span class="title">알록달록 무지개 스트랩 폰케이스</span>
+										<span class="price">20,000원</span>
+										<span class="sPrice"></span>
+									</div>
+									<div class="wish">492명의 고객님들이 이 작품을 구매 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img15.jpg" alt="추석선물세트 수제청">
+									<div class="text">
+										<span class="name">유월달</span>
+										<span class="title">추석선물세트 수제청</span>
+										<span class="price">36,000원</span>
+										<span class="sPrice">40,000원</span>
+									</div>
+									<div class="wish">81명의 고객님들이 이 작품을 구매 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img16.jpg" alt="[꽃을담다] 부모님선물 꽃차 3종">
+									<div class="text">
+										<span class="name">꽃을담다</span>
+										<span class="title">[꽃을담다] 부모님선물 꽃차 3종</span>
+										<span class="price">33,600원</span>
+										<span class="sPrice">42,000원</span>
+									</div>
+									<div class="wish">898명의 고객님들이 이 작품을 구매 했어요!</div>
+								</li>
+							</ul>
+							<ul class="arrowBtn arrowBtn1">
+								<li class="leftBtn"><a href="#">a1</a></li>
+								<li class="rightBtn"><a href="#">a2</a></li>
+							</ul>
+							<ul class="cBtn cBtn1">
+								<li class="active"><a href="#">c1</a></li>
+								<li><a href="#">c2</a></li>
+							</ul>
+						</div>
+						<div class="bestWrap2">
+							<ul class="best2banner">
+								<li>
+									<img src="images/best_img21.jpg" alt="우주를 담은 달과별 쉐이커 키링">
+									<div class="text">
+										<span class="name">솔리졸리</span>
+										<span class="title">우주를 담은 달과별 쉐이커 키링</span>
+										<span class="price">18,000원</span>
+										<span class="sPrice">20,000원</span>
+									</div>
+									<div class="wish">고객님들이 694회 구경 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img22.jpg" alt="캐리커쳐 일러스트 명함 - 주문제작">
+									<div class="text">
+										<span class="name">캘디</span>
+										<span class="title">캐리커쳐 일러스트 명함 - 주문제작</span>
+										<span class="price">30,600원</span>
+										<span class="sPrice">40,000원</span>
+									</div>
+									<div class="wish">고객님들이 1,834회 구경 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img23.jpg" alt="스트랩 하드케이스">
+									<div class="text">
+										<span class="name">커즈닷</span>
+										<span class="title">스트랩 하드케이스</span>
+										<span class="price">19,000원</span>
+										<span class="sPrice">24,000원</span>
+									</div>
+									<div class="wish">고객님들이 12,296회 구경 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img24.jpg" alt="산골짜기다돔쥐아기다돔쥐에어팟케이스">
+									<div class="text">
+										<span class="name">두개두개팩토리</span>
+										<span class="title">산골짜기다돔쥐아기다돔쥐에어팟케이스</span>
+										<span class="price">23,000원</span>
+										<span class="sPrice"></span>
+									</div>
+									<div class="wish">고객님들이 971회 구경 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img25.jpg" alt="액자 배경화면 초상화">
+									<div class="text">
+										<span class="name">온도</span>
+										<span class="title">액자 배경화면 초상화</span>
+										<span class="price">5,000원</span>
+										<span class="sPrice">8,000원</span>
+									</div>
+									<div class="wish">고객님들이 1,023회 구경 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img26.jpg" alt="라탄 원형티슈케이스">
+									<div class="text">
+										<span class="name">신현리 작업실</span>
+										<span class="title">라탄 원형티슈케이스</span>
+										<span class="price">26,000원</span>
+										<span class="sPrice">30,000원</span>
+									</div>
+									<div class="wish">고객님들이 867회 구경 했어요!</div>
+								</li>
+							</ul>
+							<ul class="arrowBtn arrowBtn2">
+								<li class="leftBtn"><a href="#">a1</a></li>
+								<li class="rightBtn"><a href="#">a2</a></li>
+							</ul>
+							<ul class="cBtn cBtn2">
+								<li class="active"><a href="#">c1</a></li>
+								<li><a href="#">c2</a></li>
+							</ul>
+						</div>
+						<div class="bestWrap3">
+							<ul class="best3banner">
+								<li>
+									<img src="images/best_img31.jpg" alt="[할인] 단양즉석떡볶이맛집(2인분)">
+									<div class="text">
+										<span class="name">오구맵떡</span>
+										<span class="title">[할인] 단양즉석떡볶이맛집(2인분)</span>
+										<span class="price">8,000원</span>
+										<span class="sPrice">9,900원</span>
+									</div>
+									<div class="wish">367명의 고객님들이 이 작품을 구매 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img32.jpg" alt="감사장케이크">
+									<div class="text">
+										<span class="name">케익팩토리</span>
+										<span class="title">감사장케이크</span>
+										<span class="price">42,000원</span>
+										<span class="sPrice">57,000원</span>
+									</div>
+									<div class="wish">2,471명의 고객님들이 이 작품을 구매 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img33.jpg" alt="[신상할인] 원고지튤립펜 무드등">
+									<div class="text">
+										<span class="name">소분</span>
+										<span class="title">[신상할인] 원고지튤립펜 무드등</span>
+										<span class="price">22,800원</span>
+										<span class="sPrice">32,000원</span>
+									</div>
+									<div class="wish">285명의 고객님들이 이 작품을 구매 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img34.jpg" alt="슬림 주차번호판 Round">
+									<div class="text">
+										<span class="name">두버디 DOBUDDY</span>
+										<span class="title">슬림 주차번호판 Round</span>
+										<span class="price">5,800원</span>
+										<span class="sPrice"></span>
+									</div>
+									<div class="wish">134명의 고객님들이 이 작품을 구매 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img35.jpg" alt="썬캐쳐 책갈피/키링">
+									<div class="text">
+										<span class="name">화월 &middot; 花月</span>
+										<span class="title">썬캐쳐 책갈피/키링</span>
+										<span class="price">13,000원</span>
+										<span class="sPrice"></span>
+									</div>
+									<div class="wish">615명의 고객님들이 이 작품을 구매 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img36.jpg" alt="마카롱, 오직 널 위해 널담은뚱카롱">
+									<div class="text">
+										<span class="name">널담은마카롱,디저트</span>
+										<span class="title">마카롱, 오직 널 위해 널담은뚱카롱</span>
+										<span class="price">1,800원</span>
+										<span class="sPrice">2,000원</span>
+									</div>
+									<div class="wish">3,044명의 고객님들이 이 작품을 구매 했어요!</div>
+								</li>
+							</ul>
+							<ul class="arrowBtn arrowBtn3">
+								<li class="leftBtn"><a href="#">a1</a></li>
+								<li class="rightBtn"><a href="#">a2</a></li>
+							</ul>
+							<ul class="cBtn cBtn3">
+								<li class="active"><a href="#">c1</a></li>
+								<li><a href="#">c2</a></li>
+							</ul>
+						</div>
+						<div class="bestWrap4">
+							<ul class="best4banner">
+								<li>
+									<img src="images/best_img41-1.jpg" alt="1+1 커스텀 커플키링/에어팟케이스">
+									<div class="text">
+										<span class="name">1+1 커스텀 커플키링/에어팟케이스</span>
+										<span class="title">부모님 선물로 드렸는데 너무 좋아하셨어요! 이것저것 수정요구가 많았는데도 다 들어주셨습니다:-</span>
+										<span class="sPrice">권유진</span>
+									</div>
+								</li>
+								<li>
+									<img src="images/best_img42-1.jpg" alt="도토리 에어팟 뜨개케이스">
+									<div class="text">
+										<span class="name">도토리 에어팟 뜨개케이스</span>
+										<span class="title">빠르게 잘 받았어요! 진한색하고 연한색하고 고민이 되었는데 진한색이 좀 옅어졌다 그래서 고민끝에 진한색으로 했는데 잘한 선택이었어요! 딱 도토리 색깔로 이뻐요</span>
+										<span class="sPrice">가을 겨울</span>
+									</div>
+								</li>
+								<li>
+									<img src="images/best_img43-1.jpg" alt="맞춤제작 드로잉 커플 폰케이스">
+									<div class="text">
+										<span class="name">맞춤제작 드로잉 커플 폰케이스</span>
+										<span class="title">몇번이나 수정요청을 드렸는데도 꼼꼼하게 잘 그려주셨어요~ 이쁘게 그려주셔서 너무 맘에 듭니다. 엽서도 잘 간직할게요!!! 감사합니다~</span>
+										<span class="sPrice">정원</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="bestWrap5">
+							<ul class="best5banner">
+								<li>
+									<img src="images/best_img51.jpg" alt="메이드와이">
+									<img src="images/best_profile1.png" alt="profile1" class="profile">
+									<div class="text">
+										<span class="name">메이드와이</span>
+										<span class="title">추석연휴 배송 스토리참고 부탁드려요!악세사리, 실버, 미아방지, 14k18k골드 1:1주문제작♡</span>
+									</div>
+									<div class="wish">
+										<div>
+											<p class="wHome">작가홈</p>
+											<p class="add">작가로 추가</p>
+											<p class="send">메세지 보내기</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="images/best_img52.jpg" alt="321팩토리 321factory">
+									<img src="images/best_profile2.png" alt="profile2" class="profile">
+									<div class="text">
+										<span class="name">321팩토리 321factory</span>
+										<span class="title">321factory 입점 2주년 이벤트 오픈예정 좋아요(♥) 눌러주시고 이벤트할인쿠폰, 신상특가알림을 빠르게 받아보세요!</span>
+									</div>
+									<div class="wish">
+										<div>
+											<p class="wHome">작가홈</p>
+											<p class="add">작가로 추가</p>
+											<p class="send">메세지 보내기</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="images/best_img53.jpg" alt="디어 벨 (Dear, Belle)">
+									<img src="images/best_profile3.png" alt="profile3" class="profile">
+									<div class="text">
+										<span class="name">디어 벨 (Dear, Belle)</span>
+										<span class="title">하나님의 기업 디어벨 퍼스널컬러시스트가 만드는 악세서리 디어벨 with 월드비젼</span>
+									</div>
+									<div class="wish">
+										<div>
+											<p class="wHome">작가홈</p>
+											<p class="add">작가로 추가</p>
+											<p class="send">메세지 보내기</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="bestWrap6">
+							<ul class="best6banner">
+								<li>
+									<img src="images/best_img61.jpg" alt="가성비짱! 커플 드로잉 폰케이스">
+									<div class="text">
+										<span class="name">드로잉마켓</span>
+										<span class="title">가성비짱! 커플 드로잉 폰케이스</span>
+										<span class="price">10,900원</span>
+										<span class="sPrice">20,000원</span>
+									</div>
+									<div class="wish">340명의 고객님들이 이 작품을 구매 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img62.jpg" alt="영화 감성 자수 에코백">
+									<div class="text">
+										<span class="name">LIKE A MOVIE</span>
+										<span class="title">영화 감성 자수 에코백</span>
+										<span class="price">27,000원</span>
+										<span class="sPrice"></span>
+									</div>
+									<div class="wish">고객님들이 41,985회 구경 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img63.jpg" alt="선물의 의미 활짝반짝 디퓨저 세트">
+									<div class="text">
+										<span class="name">초가연</span>
+										<span class="title">선물의 의미 활짝반짝 디퓨저 세트</span>
+										<span class="price">18,800원</span>
+										<span class="sPrice">22,700원</span>
+									</div>
+									<div class="wish">311명의 고객님들이 이 작품을 구매 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img64.jpg" alt="코바늘 복조리가방 복조리파우치(2color)">
+									<div class="text">
+										<span class="name">솝마켓</span>
+										<span class="title">코바늘 복조리가방 복조리파우치(2color)</span>
+										<span class="price">26,000원</span>
+										<span class="sPrice">40,000원</span>
+									</div>
+									<div class="wish">고객님들이 1,287회 구경 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img65.jpg" alt="[재입고특가]모던블랙커플셋♥">
+									<div class="text">
+										<span class="name">Vowood</span>
+										<span class="title">[재입고특가]모던블랙커플셋♥</span>
+										<span class="price">229,000원</span>
+										<span class="sPrice">408,000원</span>
+									</div>
+									<div class="wish">482명의 고객님들이 이 작품을 구매 했어요!</div>
+								</li>
+								<li>
+									<img src="images/best_img66.jpg" alt="디퓨저 수국의 밤">
+									<div class="text">
+										<span class="name">초가연</span>
+										<span class="title">디퓨저 수국의 밤</span>
+										<span class="price">8,900원</span>
+										<span class="sPrice">9,000원</span>
+									</div>
+									<div class="wish">2,616명의 고객님들이 이 작품을 구매 했어요!</div>
+								</li>
+							</ul>
+							<ul class="arrowBtn arrowBtn6">
+								<li class="leftBtn"><a href="#">a1</a></li>
+								<li class="rightBtn"><a href="#">a2</a></li>
+							</ul>
+							<ul class="cBtn cBtn6">
+								<li class="active"><a href="#">c1</a></li>
+								<li><a href="#">c2</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</section>
+				<section class="event clearFix">
+					<h2 class="blind">event</h2>
+					<ul>
+						<li><a href="#"><img src="images/event1.jpg" alt="지금 회원가입하면 5,000원 쿠폰 증정"></a></li>
+						<li class="last"><a href="#"><img src="images/event2.jpg" alt="1,000만원 퀴즈 대회"></a></li>
+					</ul>
+				</section>
+				<section class="video clearFix">
+					<h2 class="title">Video</h2>
+					<ul>
+						<li><a href="#"><img src="images/video1.png" alt="쇼파 BEST5"><span>쇼파 BEST5</span></a></li>
+						<li><a href="#"><img src="images/video2.png" alt="매일 가지고 다니고 싶은 카드지갑"><span>매일 가지고 다니고 싶은 카드지갑</span></a></li>
+						<li><a href="#"><img src="images/video3.png" alt="유니크한 원목 키링"><span>유니크한 원목 키링</span></a></li>
+						<li><a href="#"><img src="images/video4.png" alt="더운 여름, 시원한 음료!"><span>더운 여름, 시원한 음료!</span></a></li>
+						<li><a href="#"><img src="images/video5.png" alt="추석, 용돈 봉투 토퍼 BEST5"><span>추석, 용돈 봉투 토퍼 BEST5</span></a></li>
+						<li><a href="#"><img src="images/video6.png" alt="추석에 선물하기 좋은 만주"><span>추석에 선물하기 좋은 만주</span></a></li>
+					</ul>
+				</section>
+				<section class="custom clearFix">
+					<h2 class="blind">공지사항, 자주 묻는 질문</h2>
+					<section>
+						<h2 class="title">공지사항</h2>
+						<ul>
+							<li><a href="#">카드사 무이자 할부 안내</a></li>
+							<li><a href="#"><span>[~67% 할인! 추석 예약 할인]</span> 미리 선물 준비하고 할인받으세요</a></li>
+							<li><a href="#"><span>[오프라인 클래스]</span> 누구나 금손이 될 수 있어요! 아이디어를 공모합니다.</a></li>
+							<li><a href="#">매주 한 장씩 '할인 쿠폰' 무제한 받는 꿀팁</a></li>
+							<li><a href="#">매일 할인인데 왜 안써요? 안쓰면 손해! 매인 최대 1만원</a></li>
+						</ul>
+						<p class="more"><a href="#"><img src="images/btn_more.png" alt="더보기"></a></p>
+					</section>
+					<section>
+						<h2 class="title">자주 묻는 질문</h2>
+						<ul>
+							<li><a href="#">idus 작가로 입점하고 싶으신가요?</a></li>
+							<li><a href="#"><span>idus 에서는 핸드메이드/수제작품만 판매합니다.</span></a></li>
+							<li><a href="#">구매 후기는 어떻게 남기나요?</a></li>
+							<li><a href="#">취소 / 환불은 어떻게 하나요?</a></li>
+							<li><a href="#">엇?! 장바구니에 담아놓은 작품들이 사라졌어요.</a></li>
+						</ul>
+						<p class="more"><a href="#"><img src="images/btn_more.png" alt="더보기"></a></p>
+					</section>
+				</section>
+			</div>
+		</section>
+	</div>
+
+	<!-- footer -->
+	<footer>
+		<div class="footTop">
+			<div class="center">
+				<ul class="footMenu ">
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보 취급방침</a></li>
+					<li><a href="#">공지사항</a></li>
+					<li><a href="#">자주 묻는 질문</a></li>
+					<li><a href="#">이벤트</a></li>
+					<li><a href="#">입점문의</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footBottom">
+			<div class="center">
+				<p class="footLogo"><img src="images/footer_logo.png" alt="아이디어스"></p>
+				<div class="footText">
+					<address>
+						<p>
+							<span>(주) 백패커</span>
+							<span>대표이사 : 김동환</span>
+							<span>주소: 서울특별시 마포구 홍익로5안길 28, 3f</span>
+							<span>사업자 등록번호:107-87-83297 사업자 정보확인</span>
+							<span>통신판매업신고 : 2015-서울마포-0440</span>
+						</p>
+						<p>
+							<span>고객센터: 주 7일, 오전 10시 ~ 저녁 10시까지</span>
+							<span>카카오톡 : 아이디어스</span>
+							<span>대표번호 : 1668-3651</span>
+							<span>메일 : support@idus.me</span>
+						</p>
+					</address>
+					<div>
+						<p>
+						    <span>아이디어스는 통신판매중개자이며 통신판매의 당사자가 아닙니다.</span>
+						    <span>따라서 아이디어스는 상품 거래정보 및 거래에 대하여 책임을 지지 않습니다.</span>
+				        </p>
+						<p>Copyright &copy; 2019 Backpackr All right reserved.</p>
+					</div>
+				</div>
+				<ul class="sns">
+					<li><a href="#">facebook</a></li>
+					<li><a href="#">instargram</a></li>
+					<li><a href="#">twitter</a></li>
+					<li><a href="#">blog</a></li>
+					<li><a href="#">kakao</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<p class="top"><a href="#">TOP</a></p>
+	<div class="fixed">
+		<ul>
+			<li><a href="index.html"><img src="images/btn_home.png" alt="홈"><span>홈</span></a></li>
+			<li><a href="login.html"><img src="images/btn_mypage2.png" alt="마이페이지"><span>마이페이지</span></a></li>
+			<li><a href="#"><img src="images/btn_cart2.png" alt="장바구니 / 배송조회"><span>장바구니 / 배송조회</span></a></li>
+			<li><a href="#"><img src="images/btn_favorites.png" alt="즐겨찾기"><span>즐겨찾기</span></a></li>
+		</ul>
+	</div>
+</body></html>

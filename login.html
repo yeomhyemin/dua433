@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shotcut icon" href="images/idus_logo.ico">
+    <title>아이디어스 - 핸드메이드, 수공예, 수제먹거리</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/login.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+		<div class="headTop">
+			<div class="center">
+				<h1 class="logo"><a href="index.html"><img src="images/header_logo.svg" alt="아이디어스"></a></h1>
+				<ul class="gnb">
+					<li><a href="login.html">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#"><img src="images/btn_mypage.png" alt="마이페이지"></a></li>
+					<li><a href="#"><img src="images/btn_cart.png" alt="장바구니"></a></li>
+				</ul>
+				<div class="realTime">
+					<div class="timeAni">
+						<ul class="realTimeAni">
+							<li><a href="#">1. 에어팟케이스</a></li>
+							<li class="ani1"><a href="#">2. 폰케이스</a></li>
+							<li class="ani1"><a href="#">3. 추석</a></li>
+							<li class="ani1"><a href="#">4. 키링</a></li>
+							<li class="ani1"><a href="#">5. 커플</a></li>
+							<li class="ani1"><a href="#">6. 반지</a></li>
+							<li class="ani1"><a href="#">7. 귀걸이</a></li>
+							<li class="ani1"><a href="#">8. 생일선물</a></li>
+							<li class="ani1"><a href="#">9. 가방</a></li>
+							<li class="ani1"><a href="#">10. 파우치</a></li>
+						</ul>
+					</div>
+					<div class="realTimePop">
+						<h2>실시간 인기 검색어</h2>
+						<ul>
+							<li><a href="#"><span>1</span>에어팟케이스</a></li>
+							<li><a href="#"><span>2</span>폰케이스</a></li>
+							<li><a href="#"><span>3</span>추석</a></li>
+							<li><a href="#"><span>4</span>키링</a></li>
+							<li><a href="#"><span>5</span>커플</a></li>
+							<li><a href="#"><span>6</span>반지</a></li>
+							<li><a href="#"><span>7</span>귀걸이</a></li>
+							<li><a href="#"><span>8</span>생일선물</a></li>
+							<li><a href="#"><span>9</span>가방</a></li>
+							<li><a href="#"><span>10</span>파우치</a></li>
+						</ul>
+					</div>
+				</div>
+				<form class="search">
+					<label for="iSearch">작품, 작가 검색</label>
+					<input type="text" id="iSearch">
+					<a href="#" class="searchBtn"><img src="images/btn_search.png" alt="작품, 작가 검색"></a>
+				</form>
+				<a href="#" class="mSearch"><img src="images/btn_search2.png" alt="작품, 작가 검색"></a>
+				<a href="#" class="mHam"><img src="images/all.png" alt="전체카테고리"></a>
+			</div>
+		</div>
+		<div class="headBottom clearFix">
+			<div class="subBg"></div>
+			<div class="center">
+				<div class="category">
+					<p class="cateHam">
+						<a href="#">
+							<span class="ham1"></span>
+							<span class="ham2"></span>
+							<span class="ham3"></span>
+						</a>
+					</p>
+					<a href="#">전체카테고리</a>
+					<ul class="cateWrap clearFix">
+						<li class="cate1">
+							<h2 class="cateTitle">음식</h2>
+							<ul class="sub">
+								<li><a href="#">디저트, 베이커리, 떡</a></li>
+								<li><a href="#">농축수산물</a></li>
+								<li><a href="#">수제반찬</a></li>
+								<li><a href="#">음료(커피, 차 등)</a></li>
+								<li><a href="#">그 외 수제먹거리</a></li>
+								<li><a href="#">전통주</a></li>
+							</ul>
+						</li>
+						<li class="cate2">
+							<h2 class="cateTitle">인테리어</h2>
+							<ul class="sub">
+								<li><a href="#">인테리어 소품</a></li>
+								<li><a href="#">가구</a></li>
+								<li><a href="#">도자기</a></li>
+								<li><a href="#">캔들, 디퓨저, 방향제</a></li>
+							</ul>
+						</li>
+						<li class="cate3">
+							<h2 class="cateTitle">패션&amp;뷰티</h2>
+							<ul class="sub">
+								<li><a href="#">휴대폰케이스</a></li>
+								<li><a href="#">가방, 파우치</a></li>
+								<li><a href="#">여성 수제화</a></li>
+								<li><a href="#">남성 수제화</a></li>
+								<li><a href="#">섬유, 의류, 퀼트</a></li>
+								<li><a href="#">지갑(지폐, 카드, 동전, 명함)</a></li>
+								<li><a href="#">패션잡화</a></li>
+								<li><a href="#">향수, 화장품, 뷰티</a></li>
+							</ul>
+						</li>
+						<li class="cate4">
+							<h2 class="cateTitle">액세서리</h2>
+							<ul class="sub">
+								<li><a href="#">귀걸이</a></li>
+								<li><a href="#">반지</a></li>
+								<li><a href="#">목걸이</a></li>
+								<li><a href="#">팔찌</a></li>
+								<li><a href="#">시계</a></li>
+								<li><a href="#">전자기기 관련</a></li>
+								<li><a href="#">그 외 액세서리</a></li>
+							</ul>
+						</li>
+						<li class="cate5">
+							<h2 class="cateTitle">그림</h2>
+							<ul class="sub">
+								<li><a href="#">페인팅, 캐리커쳐, 캘리</a></li>
+								<li><a href="#">파인아트</a></li>
+							</ul>
+						</li>
+						<li class="cate6">
+							<h2 class="cateTitle">생활</h2>
+							<ul class="sub">
+								<li><a href="#">주방, 생활</a></li>
+								<li><a href="#">비누, 천연비누</a></li>
+								<li><a href="#">반려동물 용품</a></li>
+								<li><a href="#">육아, 아동</a></li>
+								<li><a href="#">인형, 장난감</a></li>
+								<li><a href="#">문구, 팬시</a></li>
+								<li><a href="#">꽃(생화, 드라이, 다육 등)</a></li>
+								<li><a href="#">공예</a></li>
+							</ul>
+						</li>
+						<li class="cate7">
+							<h2 class="cateTitle">기타</h2>
+							<ul class="sub">
+								<li><a href="#">기타</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<ul id="nav">
+					<li>
+						<a href="#">음식</a>
+						<ul class="sub">
+							<li><a href="#">디저트, 베이커리, 떡</a></li>
+							<li><a href="#">농축수산물</a></li>
+							<li><a href="#">수제반찬</a></li>
+							<li><a href="#">음료(커피, 차 등)</a></li>
+							<li><a href="#">그 외 수제먹거리</a></li>
+							<li><a href="#">전통주</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">인테리어</a>
+						<ul class="sub">
+							<li><a href="#">인테리어 소품</a></li>
+							<li><a href="#">가구</a></li>
+							<li><a href="#">도자기</a></li>
+							<li><a href="#">캔들, 디퓨저, 방향제</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">패션&amp;뷰티</a>
+						<ul class="sub">
+							<li><a href="#">휴대폰케이스</a></li>
+							<li><a href="#">가방, 파우치</a></li>
+							<li><a href="#">여성 수제화</a></li>
+							<li><a href="#">남성 수제화</a></li>
+							<li><a href="#">섬유, 의류, 퀼트</a></li>
+							<li><a href="#">지갑(지폐, 카드, 동전, 명함)</a></li>
+							<li><a href="#">패션잡화</a></li>
+							<li><a href="#">향수, 화장품, 뷰티</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">액세서리</a>
+						<ul class="sub">
+							<li><a href="#">귀걸이</a></li>
+							<li><a href="#">반지</a></li>
+							<li><a href="#">목걸이</a></li>
+							<li><a href="#">팔찌</a></li>
+							<li><a href="#">시계</a></li>
+							<li><a href="#">전자기기 관련</a></li>
+							<li><a href="#">그 외 액세서리</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">그림</a>
+						<ul class="sub">
+							<li><a href="#">페인팅, 캐리커쳐, 캘리</a></li>
+							<li><a href="#">파인아트</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">생활</a>
+						<ul class="sub">
+							<li><a href="#">주방, 생활</a></li>
+							<li><a href="#">비누, 천연비누</a></li>
+							<li><a href="#">반려동물 용품</a></li>
+							<li><a href="#">육아, 아동</a></li>
+							<li><a href="#">인형, 장난감</a></li>
+							<li><a href="#">문구, 팬시</a></li>
+							<li><a href="#">꽃(생화, 드라이, 다육 등)</a></li>
+							<li><a href="#">공예</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">기타</a>
+						<ul class="sub">
+							<li><a href="#">기타</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="mCategoryW">
+				<div class="mCategory">
+					<div class="cateHead">
+						<div class="cateLogo"><img src="images/logo.png" alt="아이디어스"></div>
+						<div class="closeBtn"><a href="#"><img src="images/close.png" alt="close"></a></div>
+					</div>
+					<ul class="mCateWrap">
+						<li class="cate1">
+							<h2 class="cateTitle">음식</h2>
+							<ul class="sub">
+								<li><a href="#">디저트, 베이커리, 떡</a></li>
+								<li><a href="#">농축수산물</a></li>
+								<li><a href="#">수제반찬</a></li>
+								<li><a href="#">음료(커피, 차 등)</a></li>
+								<li><a href="#">그 외 수제먹거리</a></li>
+								<li><a href="#">전통주</a></li>
+							</ul>
+						</li>
+						<li class="cate2">
+							<h2 class="cateTitle">인테리어</h2>
+							<ul class="sub">
+								<li><a href="#">인테리어 소품</a></li>
+								<li><a href="#">가구</a></li>
+								<li><a href="#">도자기</a></li>
+								<li><a href="#">캔들, 디퓨저, 방향제</a></li>
+							</ul>
+						</li>
+						<li class="cate3">
+							<h2 class="cateTitle">패션&amp;뷰티</h2>
+							<ul class="sub">
+								<li><a href="#">휴대폰케이스</a></li>
+								<li><a href="#">가방, 파우치</a></li>
+								<li><a href="#">여성 수제화</a></li>
+								<li><a href="#">남성 수제화</a></li>
+								<li><a href="#">섬유, 의류, 퀼트</a></li>
+								<li><a href="#">지갑(지폐, 카드, 동전, 명함)</a></li>
+								<li><a href="#">패션잡화</a></li>
+								<li><a href="#">향수, 화장품, 뷰티</a></li>
+							</ul>
+						</li>
+						<li class="cate4">
+							<h2 class="cateTitle">액세서리</h2>
+							<ul class="sub">
+								<li><a href="#">귀걸이</a></li>
+								<li><a href="#">반지</a></li>
+								<li><a href="#">목걸이</a></li>
+								<li><a href="#">팔찌</a></li>
+								<li><a href="#">시계</a></li>
+								<li><a href="#">전자기기 관련</a></li>
+								<li><a href="#">그 외 액세서리</a></li>
+							</ul>
+						</li>
+						<li class="cate5">
+							<h2 class="cateTitle">그림</h2>
+							<ul class="sub">
+								<li><a href="#">페인팅, 캐리커쳐, 캘리</a></li>
+								<li><a href="#">파인아트</a></li>
+							</ul>
+						</li>
+						<li class="cate6">
+							<h2 class="cateTitle">생활</h2>
+							<ul class="sub">
+								<li><a href="#">주방, 생활</a></li>
+								<li><a href="#">비누, 천연비누</a></li>
+								<li><a href="#">반려동물 용품</a></li>
+								<li><a href="#">육아, 아동</a></li>
+								<li><a href="#">인형, 장난감</a></li>
+								<li><a href="#">문구, 팬시</a></li>
+								<li><a href="#">꽃(생화, 드라이, 다육 등)</a></li>
+								<li><a href="#">공예</a></li>
+							</ul>
+						</li>
+						<li class="cate7">
+							<h2 class="cateTitle">기타</h2>
+							<ul class="sub">
+								<li><a href="#">기타</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <!-- container -->
+    <div id="container">
+        <div class="center clearFix">
+            <p class="ebanner"><a href="#"><img src="images/event_banner.png" alt="추석선물 예약 할인"></a></p>
+            <div class="login">
+                <h2>LOGIN</h2>
+                <div class="memberL">
+                    <p class="subTitle">회원로그인</p>
+                    <label for="mId"><img src="images/icon_id.png" alt="이메일"></label>
+                    <input type="text" id="mId" placeholder="이메일"><br>
+                    <label for="mPass"><img src="images/icon_lock.png" alt="비밀번호"></label>
+                    <input type="password" id="mPass" placeholder="비밀번호"><br>
+                </div>
+                <div class="idSs clearFix">
+                    <div class="idSave">
+                        <input type="checkbox" id="idSave">
+                        <label for="idSave">이메일 저장하기</label>
+                    </div>
+                    <p><a href="#"><span>아이디 찾기</span><span>비밀번호 찾기</span></a></p>
+                </div>
+                <div class="btn clearFix">
+                    <button class="loginBtn">로그인</button>
+                    <button class="joinBtn">회원가입</button>
+                    <p>지금 가입하면 <span>5,000원</span> 쿠폰 지급!</p>
+                </div>
+                <div class="simpleL">
+                    <p class="subTitle">SNS 간편로그인</p>
+                    <ul class="clearFix">
+                        <li><a href="#">카카오톡</a></li>
+                        <li><a href="#">네이버</a></li>
+                        <li><a href="#">페이스북</a></li>
+                        <li><a href="#">트위터</a></li>
+                    </ul>
+                </div>
+                <p class="mEbanner"><a href="#"><img src="images/moblie_event_banner.png" alt="추석선물 예약 할인"></a></p>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+		<div class="footTop">
+			<div class="center">
+				<ul class="footMenu ">
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보 취급방침</a></li>
+					<li><a href="#">공지사항</a></li>
+					<li><a href="#">자주 묻는 질문</a></li>
+					<li><a href="#">이벤트</a></li>
+					<li><a href="#">입점문의</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footBottom">
+			<div class="center">
+				<p class="footLogo"><img src="images/footer_logo.png" alt="아이디어스"></p>
+				<div class="footText">
+					<address>
+						<p>
+							<span>(주) 백패커</span>
+							<span>대표이사 : 김동환</span>
+							<span>주소: 서울특별시 마포구 홍익로5안길 28, 3f</span>
+							<span>사업자 등록번호:107-87-83297 사업자 정보확인</span>
+							<span>통신판매업신고 : 2015-서울마포-0440</span>
+						</p>
+						<p>
+							<span>고객센터: 주 7일, 오전 10시 ~ 저녁 10시까지</span>
+							<span>카카오톡 : 아이디어스</span>
+							<span>대표번호 : 1668-3651</span>
+							<span>메일 : support@idus.me</span>
+						</p>
+					</address>
+					<div>
+						<p>
+						    <span>아이디어스는 통신판매중개자이며 통신판매의 당사자가 아닙니다.</span>
+						    <span>따라서 아이디어스는 상품 거래정보 및 거래에 대하여 책임을 지지 않습니다.</span>
+						</p>
+						<p>Copyright &copy; 2019 Backpackr All right reserved.</p>
+					</div>
+				</div>
+				<ul class="sns">
+					<li><a href="#">facebook</a></li>
+					<li><a href="#">instargram</a></li>
+					<li><a href="#">twitter</a></li>
+					<li><a href="#">blog</a></li>
+					<li><a href="#">kakao</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<p class="top"><a href="#">TOP</a></p>
+	<div class="fixed">
+		<ul>
+			<li><a href="index.html"><img src="images/btn_home.png" alt="홈"><span>홈</span></a></li>
+			<li><a href="login.html"><img src="images/btn_mypage2.png" alt="마이페이지"><span>마이페이지</span></a></li>
+			<li><a href="#"><img src="images/btn_cart2.png" alt="장바구니 / 배송조회"><span>장바구니 / 배송조회</span></a></li>
+			<li><a href="#"><img src="images/btn_favorites.png" alt="즐겨찾기"><span>즐겨찾기</span></a></li>
+		</ul>
+	</div>
+    
+</body>
+
+</html>
